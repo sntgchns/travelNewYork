@@ -9,11 +9,15 @@
     }
     #section2{
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: auto auto;
     }
     #sectioncatalogo{
         display: grid;
         grid-template-columns: auto auto auto auto;
+    }
+    iframe{
+        width: 500px;
+        height: 400px;
     }
 }
 @media (max-width: 1000px){
@@ -24,12 +28,16 @@
         font-size: 40px;    
     }
     #section2{
-        display: grid;
-        grid-template-columns: 50% 50%;
+        display: flex;
+        flex-direction: column;
     }
     #sectioncatalogo{
         display: grid;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto;
+    }
+    iframe{
+        width: 600px;
+        height: 400px;
     }
 }
 @media (max-width: 850px){
@@ -45,7 +53,11 @@
     }
     #sectioncatalogo{
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
+    }
+    iframe{
+        width: 400px;
+        height: 300px;
     }
 }
 @media (max-width: 576px){
@@ -61,7 +73,11 @@
     }
     #sectioncatalogo{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
+    }
+    iframe{
+        width: 400px;
+        height: 300px;
     }
 }
 
@@ -96,7 +112,8 @@ body{
 header{
     width: 90%;
     display: grid;
-    grid-template-columns: 10% 90%;
+    column-gap: 1px;
+    grid-template-columns: 10% 80%;
     background-color: rgba(240, 248, 255, 0.5);
 }  
 
@@ -110,12 +127,11 @@ nav{
     display: block;
     width: 5rem;
     height: auto;
+    margin-left: 1rem;
     
 }
 #h2header{
     text-align: left;
-    margin-left: 0px;
-
 }
 
 #article3{
@@ -131,4 +147,7 @@ footer{
     display: block;
     height: 60%;
     width: 90%;
+}
+p{
+    padding: 1rem 1rem 1rem 1rem;
 }
