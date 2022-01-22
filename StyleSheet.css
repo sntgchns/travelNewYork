@@ -1,0 +1,134 @@
+/* HOJA DE ESTILO */
+
+@media (max-width: 1800px){
+    p{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 60px;    
+    }
+    #section2{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    #sectioncatalogo{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+}
+@media (max-width: 1000px){
+    p{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 40px;    
+    }
+    #section2{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    #sectioncatalogo{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+}
+@media (max-width: 850px){
+    p{
+        font-size: 16px;
+    }
+    h2{
+        font-size: 30px;    
+    }
+    #section2{
+        display: flex;
+        flex-direction: column;
+    }
+    #sectioncatalogo{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+@media (max-width: 576px){
+    p{
+        font-size: 12px;
+    }
+    h2{
+        font-size: 25px;    
+    }
+    #section2{
+        display: flex;
+        flex-direction: column;
+    }
+    #sectioncatalogo{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+
+/* ESTILO UNIVERSAL */
+
+*{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+
+section{
+    background-color: rgba(240, 248, 255, 0.7);
+    width: 90%;
+}
+
+body{
+    display: grid;
+    row-gap: 1rem;
+    width: 100%;
+    background-image: url(Imagenes/grayscale-shot-of-an-empire-state-building-of-new-usa.jpg);
+    background-size: cover;
+   
+
+}
+
+header{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    background-color: rgba(240, 248, 255, 0.5);
+}  
+
+nav{
+    width: 90%;
+    background-color: rgba(240, 248, 255, 0.6);
+    text-align: right;
+}
+ 
+#logoheader{
+    display: block;
+    width: 5rem;
+    height: auto;
+    
+}
+#h2header{
+    text-align: left;
+    margin-left: 0px;
+
+}
+
+#article3{
+    width: 80%;
+}
+
+footer{
+    width: 90%;
+    background-color: rgba(240, 248, 255, 0.9);
+}
+
+#imgcatalogo{
+    display: block;
+    height: 60%;
+    width: 90%;
+}
