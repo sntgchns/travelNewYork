@@ -1,172 +1,84 @@
 <!DOCTYPE html>
 
 <html>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="StyleSheet.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="javascript" href="javascript.js" />
-  <script src="javascript.js"></script>
-
-  <!-- TITULO DE PESTAÑA CON FAVICON -->
-
   <head>
-    <title>Travel New York</title>
-    <link
-      rel="icon"
-      href="Iconos/iconoliberty.png"
-      type="image/gif"
-      sizes="18x18"
-    />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="StyleSheet.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet" />
+      <link rel="javascript" href="javascript.js" />
+      <script src="javascript.js"></script> 
+      <title>Travel New York</title>
+      <link rel="icon" href="Iconos/iconoliberty.png" type="image/gif" sizes="18x18" />
   </head>
-
-  <!-- CUERPO DE PAGINA -->
-
   <body>
-    <!-- ENCABEZADO CON MENU -->
+      <header>
+        <a href="#">
+          <img src="Iconos/iconoliberty.png" />
+        </a>
+        <h2>Travel New York</h2>
+      </header>
 
-    <header>
-      <a href="Index.html">
-        <img id="logoheader" src="Iconos/iconoliberty.png"
-      /></a>
-      <h2 id="h2header">Travel New York</h2>
-    </header>
+      <nav>
+        <a href="Highlights.html">Highlights</a>
+        <a href="#office">Our Office</a>
+        <a href="#contact">Contact Us!</a>
+      </nav>
 
-    <nav>
-      <a style="text-decoration: none" href="Highlights.html"
-        >Highlights &nbsp;</a
-      >
-      <a style="text-decoration: none" href="#office">Our Office &nbsp;</a>
-      <a style="text-decoration: none" href="#contact">Contact Us!&nbsp;</a>
-    </nav>
+      <section class="first">
+        <ul>
+          <li>Come to visit New York and enjoy of beeing part of the most
+            beautiful city on the world!</li>
+          <li>Be welcome to contact us for the best experience that you could have.</li>
+          <li>You are going to be part of the "big apple" and live it as a newyorker.</li>
+          <li>Walking the streets, eating in the neighborhood local restaurants and
+            very famous food trucks.</li>
+          <li>Trust in our specialist citizens of New York to guide you on our highlits.</li>
+          <li>Be part of it, live the city!</li>
+          <li>Come visit New York with us.</li>
+        </ul>
+      </section>
 
-    <section id="section1">
-      <p>
-        <br />Come to visit New York and enjoy of beeing part of the most
-        beautiful city on the world! <br /><br />
-        Be welcome to contact us for the best experience that you could have.
-        <br /><br />
-        You are going to be part of the "big apple" and live it as a newyorker.
-        <br /><br />
-        Walking the streets, eating in the neighborhood local restaurants and
-        very famous food trucks. <br /><br />Trust in our specialist citizens of
-        New York to guide you on our highlits. <br /><br />Be part of it, live
-        the city! <br /><br />Come visit New York with us.
-      </p>
-    </section>
+      <section id="office" class="second">          
+            <h2>Our Office</h2>
+          <div>
+            <ul>
+              <li>Central Office Manhattan Park Avenue S</li>
+              <li>Open hours:</li>
+              <ul>
+                <li>mon - fri 8 to 18</li>
+                <li>sat - sun and holidays 10 to 15</li>
+              </ul>
+              <li>Online contact 24/7 available.</li>
+            </ul>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.8803028823436!2d-73.98569413463413!3d40.74265927932854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a772739aa9%3A0x5caa571453a457b2!2sSarabeth&#39;s!5e0!3m2!1ses-419!2sar!4v1642691076216!5m2!1ses-419!2sar"></iframe>
+          </div>
+        </section>
 
-    <section id="section2">
-      <!-- DIRECCION -->
+      <section id="contact" class="third">
+        <article>
+          <h2>Contact Us!</h2>
+          <form id="form" action="" method="post">
+              <div class="fila">
+                <input id="nombre" type="text" name="nombre"required placeholder="Your name"/>
+                <input id="mail" type="text" name="mail" required placeholder="Mail address"/>
+              </div>
+              <div class="fila">
+                <input id="tel" type="text" name="tel" required placeholder="Phone number"/>
+                <input id="subject" type="text" name="motivo" required placeholder="Subject"/>
+              </div>
+              <textarea id="comentarios" name="mensaje" required placeholder="How can we help you?"></textarea>
+              <input class="btn" type="submit" value="Send" onClick="return validacion();" />
+          </form>
+        </article>
+      </section>
 
-      <article id="article1">
-        <h2>Our Office</h2>
-
-        <p>
-          <br />
-          Central Office Manhattan <br />
-          <br />
-          Park Avenue S<br /><br />
-          Open hours:<br /><br />
-          mon - fri 8 to 18<br />
-          sat - sun and holidays 10 to 15<br /><br /><br />
-          Online contact 24/7 available.<br /><br />
-        </p>
-      </article>
-
-      <!-- MAPA INTERACTIVO DE UBICACION -->
-
-      <article id="article2">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.8803028823436!2d-73.98569413463413!3d40.74265927932854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a772739aa9%3A0x5caa571453a457b2!2sSarabeth&#39;s!5e0!3m2!1ses-419!2sar!4v1642691076216!5m2!1ses-419!2sar"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
-      </article>
-    </section>
-
-    <!-- SECTION -->
-
-    <section id="section3">
-      <!-- FORMULARIO DE CONTACTO -->
-
-      <article id="article3">
-        <h2 id="contact">Contact Us!</h2>
-
-        <form id="form" action="" method="post" enctype="text/plain">
-          <p align="center">
-            Your name:<br />
-
-            <input id="nombre" type="text" name="nombre" size="22" required />
-            <br />
-
-            mail address:<br />
-
-            <input id="mail" type="text" name="mail" size="22" required />
-            <br />
-
-            Phone number:<br />
-
-            <input id="tel" type="text" name="tel" size="22" required />
-            <br />
-
-            Subject:<br />
-
-            <input id="subject" type="text" name="motivo" size="22" required />
-            <br />
-
-            How can we help you?:<br />
-
-            <textarea
-              id="comentarios"
-              rows="5"
-              cols="25"
-              name="mensaje"
-              required
-            ></textarea>
-            <br />
-
-            <input
-              type="submit"
-              value="Enviar"
-              onClick="return validacion();"
-            />
-          </p>
-        </form>
-      </article>
-    </section>
-
-    <!-- FOOTER -->
-
-    <footer>
-      <a href="https://instagram.com"
-        ><img
-          src="Iconos/instagram.png"
-          style="
-            width: 1.3rem;
-            height: 1.3rem;
-            margin-top: 0.6rem;
-            margin-bottom: 0.6rem;
-          "
-      /></a>
-      <a href="https://twitter.com"
-        ><img
-          src="Iconos/twitter.png"
-          style="width: 1.3rem; height: 1.3rem; margin-bottom: 0.6rem"
-      /></a>
-      <a href="https://Facebook.com"
-        ><img
-          src="Iconos/facebook.png"
-          style="width: 1.3rem; height: 1.3rem; margin-bottom: 0.6rem" /></a
-      ><br />
-    </footer>
+      <footer>
+        <a href="https://instagram.com"><img src="Iconos/instagram.png"/></a>
+        <a href="https://twitter.com"><img src="Iconos/twitter.png"/></a>
+        <a href="https://Facebook.com"><img src="Iconos/facebook.png"/></a>
+      </footer>
   </body>
 </html>

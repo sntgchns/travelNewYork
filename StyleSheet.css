@@ -1,153 +1,288 @@
-/* HOJA DE ESTILO */
-
-@media (max-width: 1800px){
-    p{
-        font-size: 24px;
-    }
-    h2{
-        font-size: 60px;    
-    }
-    #section2{
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-    #sectioncatalogo{
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-    }
-    iframe{
-        width: 500px;
-        height: 400px;
-    }
-}
-@media (max-width: 1000px){
-    p{
-        font-size: 20px;
-    }
-    h2{
-        font-size: 40px;    
-    }
-    #section2{
-        display: flex;
-        flex-direction: column;
-    }
-    #sectioncatalogo{
-        display: grid;
-        grid-template-columns: auto auto auto;
-    }
-    iframe{
-        width: 600px;
-        height: 400px;
-    }
-}
-@media (max-width: 850px){
-    p{
-        font-size: 16px;
-    }
-    h2{
-        font-size: 30px;    
-    }
-    #section2{
-        display: flex;
-        flex-direction: column;
-    }
-    #sectioncatalogo{
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-    iframe{
-        width: 400px;
-        height: 300px;
-    }
-}
-@media (max-width: 576px){
-    p{
-        font-size: 12px;
-    }
-    h2{
-        font-size: 25px;    
-    }
-    #section2{
-        display: flex;
-        flex-direction: column;
-    }
-    #sectioncatalogo{
-        display: grid;
-        grid-template-columns: auto;
-    }
-    iframe{
-        width: 400px;
-        height: 300px;
-    }
-}
-
-
-/* ESTILO UNIVERSAL */
-
-*{
+*
+{
     font-family:'Courier New', Courier, monospace;
-    font-weight: bold;
-    text-align: center;
-    margin: auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-section{
-    background-color: rgba(240, 248, 255, 0.7);
-    width: 90%;
-}
-
-body{
-    display: grid;
-    row-gap: 1rem;
-    width: 100%;
+body
+{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-image: url(Imagenes/grayscale-shot-of-an-empire-state-building-of-new-usa.jpg);
     background-size: cover;
    
-
 }
-
-header{
-    width: 90%;
-    display: grid;
-    column-gap: 1px;
-    grid-template-columns: 10% 80%;
+header
+{
     background-color: rgba(240, 248, 255, 0.5);
-}  
-
-nav{
     width: 90%;
-    background-color: rgba(240, 248, 255, 0.6);
-    text-align: right;
+    padding: 50px 25px;
+    display: flex;
 }
- 
-#logoheader{
-    display: block;
-    width: 5rem;
-    height: auto;
-    margin-left: 1rem;
-    
+header a img
+{
+    width: 80px;
+    height: 80px;
 }
-#h2header{
-    text-align: left;
+header h2
+{
+    font-size: 60px;
+    font-weight: bold;
+    padding-left: 250px;
 }
-
-#article3{
-    width: 80%;
+nav
+{
+    background-color: rgba(240, 248, 255, 0.5);
+    width: 90%;
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
-
-footer{
+nav a
+{
+    padding-right: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+section
+{
+    background-color: rgba(240, 248, 255, 0.7);
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 25px;
+}
+.first ul
+{
+    list-style: none;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px 40px;
+}
+.first ul li
+{
+    padding: 15px;
+}
+.second
+{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+.second h2
+{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+.second div
+{
+    display: flex;
+    flex-direction: row;
+}
+.second div ul
+{
+    padding: 20px 40px;
+}
+.second div ul li
+{
+    font-size: 24px;
+    padding: 10px;
+    font-weight: bold;
+}
+.second div ul ul
+{
+    padding: 10px;
+}
+.second div ul ul li
+{
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bold;
+}
+.second iframe
+{
+    width: 500px;
+    height: 300px;
+}
+.third
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact h2
+{    
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    padding: 15px;
+}
+#contact form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact form input
+{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+#contact form textarea
+{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+    resize: none;
+    padding: 10px;
+}
+#contact form .btn
+{
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+}
+footer
+{
+    margin-bottom: 15px;
+    padding: 40px;
     width: 90%;
     background-color: rgba(240, 248, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-#imgcatalogo{
-    display: block;
-    height: 60%;
-    width: 90%;
+footer a img
+{
+    width: 40px;
+    margin: 20px;
 }
-p{
-    padding: 1rem 1rem 1rem 1rem;
+.fotos
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.fotos div img
+{
+    width:370px;
+}
+.fotos div p
+{
+    font-weight: bold;
+}
+.fotos div:hover
+{
+    transform: scale(1.5);
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    background: whitesmoke;
+}
+@media (max-width: 1040px)
+{  
+    header
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header h2
+    {
+        padding-left: 0;
+        padding-top: 10px;
+    }
+}
+@media (max-width: 750px)
+{  
+    header
+    {
+        padding: 20px 25px;
+    }
+    header h2
+    {
+        font-size: 26px;
+    }
+    nav
+    {
+        justify-content: center;
+    }
+    section
+    {
+        padding: 5px;
+    }
+    .first ul
+    {
+        font-size: 20px;
+        padding: 5px;
+    }
+    .first ul li
+    {
+        text-align: justify;
+    }
+    .second h2
+    {
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+    .second div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .second div ul 
+    {
+        padding: 0px 30px;
+    }
+    .second div ul li
+    {
+        font-size: 20px;
+        padding: 5px;
+    }
+    .second div ul li:nth-child(4)
+    {
+        padding-bottom: 30px;
+    }
+    .second iframe 
+    {
+        width: 400px;
+    }
+    #contact h2
+    {
+        font-size: 40px;
+    }
+    #contact form input
+    {
+        width: 100%;
+    }
+}
+@media (max-width: 460px)
+{
+    nav a
+    {
+        padding-right: 20px;
+    }
+    .second iframe 
+    {
+        width: 300px;
+    }
+    .fotos div:hover
+    {
+        transform: scale(1.2);
+    }
 }
